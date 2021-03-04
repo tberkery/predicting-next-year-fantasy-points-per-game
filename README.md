@@ -1,6 +1,9 @@
 # predicting-next-year-fantasy-points-per-game
 Uses stats from 2019-2020 season in an attempt to predict player fantasy points per game averages for the 2020-2021 season using a multiple regression model.
-
+## Data Sources
+1. 2019 general statistics: [WR_2019_Stats] (https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/WR_2019_Stats.xlsx) | [FFToday Website] (https://fftoday.com/stats/playerstats.php?Season=2019&GameWeek=&PosID=30&LeagueID=)
+2. 2019 Next Gen Stats:  [WR_2019_NextGenStats] (https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/WR_2019_NextGenStats.xlsx) | [NFL NextGenStats Website] (https://nextgenstats.nfl.com/stats/receiving/2019/REG/all#yards)
+3. 2020 general statistics: [WR_2020_Stats] (https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/WR_2020_Stats.xlsx) | [FFToday Website] (https://fftoday.com/stats/playerstats.php?Season=2020&GameWeek=&PosID=30&LeagueID=)
 ## The Linear Regression Model
 Fantasy football is a popular game where participants draft a team of players as if they were the General Manager of an NFL football team and compete against their friends to see who can score more fantasy points in a given week. With more than 40 million players throughout the nation and lots of pride and money at stake, people make a living out of offering advice and attempting to project player performance in subsequent seasons as competitors are eager to give themselves any competitive advantage when constructing at team. This leads to the following business question: using solely stats from the 2019-2020 season, how accurately can I predict wide receivers’ production in the 2020-2021 season?
 
