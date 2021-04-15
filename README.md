@@ -51,25 +51,25 @@ While stats like the R-squared coefficient are fantastic at providing quantitati
 1. Title the new worksheet that is created “Regression Results” and explore your results, taking care to note key metrics like the R-squared coefficient. If you wish to replicate the residuals plot, make a scatter plot using the "Predicted FPTS/G" and "Residuals" columns of the residuals data below the initial regression results.
 1. If interested in replicating the Projected vs. Actual Fantasy Points Per Game Plot, make a scatterplot of 2019 FPTS/G and 2020 FPTS/G.
 
-## Updated Python Re-Analysis
-# Link to Python Code
+# Updated Python Re-Analysis
+## Link to Python Code
 [Google Colaboratory Notebook](https://colab.research.google.com/drive/1MYalMjVm9kwQC4geE5MOU37lSAk90OPV?usp=sharing)
-# Updated Regression Results
+## Updated Regression Results
 ![alt text](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/Updated%20Python%20Regression%20Results.PNG)
-# Updated Plotly Visualizations
-# Predicted 2020 Fantasy Points per Game versus Actual 2020 Fantasy Points per Game
+## Updated Plotly Visualizations
+## Predicted 2020 Fantasy Points per Game versus Actual 2020 Fantasy Points per Game
 [Interactive visualization downloadable in HTML form](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/predicted_versus_actual_fantasy_points_2020) | [Static screenshot](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/predicted_versus_actual_fantasy_points_per_game_2020_static.PNG)
 ![alt text](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/predicted_versus_actual_fantasy_points_per_game_2020_static.PNG)
 This visual is largely the same as the initial rendition of the Predicted 2020 FPTS/G versus Actual 2020 FPTS/G graph created in Excel with the modification that this model has been updated to also include a stat called plus minus (more on this below). Relative to current models, this model has an R-squared coefficient of 0.412, suggesting that about 41.2% of the variation in Actual 2020 FPTS/G is accounted for by the model's prediction for Predicted 2020 FPTS/G. We can see the mix of players who outperform the model (Actual 2020 FPTS/G exceeds Predicted 2020 FPTS/G), who underperforms the model (vice versa), and what players especially fit the model (the model correctly projected Emmanuel Sanders' actual 2020 FPTS/G within 0.0008 fantasy points per game).
 
-# Residuals versus Predicted 2020 Fantasy Points per Game
+## Residuals versus Predicted 2020 Fantasy Points per Game
 [Interactive visualization downloadable in HTML form](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/residuals_versus_predicted_fantasy_points_2020) | [Static screenshot](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/residuals_versus_predicted_fantasy_points_2020_static.PNG)
 ![alt text](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/residuals_versus_predicted_fantasy_points_2020_static.PNG)
 This residual plot is exactly what we would hope it would look like. It makes good sense that a relatively similar amount of players outperform and underperform the model. There is also no clear-cut pattern to the points in the scatterplot, suggesting that the linear model is an appropriate fit for this data.
 
 One really neat feature of the interactive HTML versions of both visuals is that you can hover over specific data points and see the player that each data point corresponds to.
 
-# Advantages of Python and Model Adjustments
+## Advantages of Python and Model Adjustments
 While Excel is a convenient and powerful tool, I was blown away by the increased functionality and ease of building a model in Python. For Excel, I found myself doing significant copying and pasting of custom formulas that could not be generalized to many different columns. This also frequently entailed reinventing the wheel when cleaning my data (e.g. removing dots and hyphens from player names) and performing many repetitive tasks by hand (e.g. creating scaterplots, writing VLOOKUPS, etc.) In contrast, with pandas dataframes in Pandas dataframes in Python, I was able to use built-in functions like split, upper, replace, and merge without having to write these formulaically from scratch or writing the same formula/code many times. 
 
 In addition, outside of simplifying repetitive tasks, I appreciated how Python makes it much easier to scale and adapt your work. With Python, I found it very easy to vary the variables in my model. Since testing a combination of input variables is as simple as adding or removing an additional column of a dataframe into the input for the SKLearn model, I was able to efficiently try additional combinations of variables in the linear regression model and see the coefficients output on the model and the impact on the R-squared. This led me to add a stat called plus-minus, which measures how many more or less yards than expected a player averages per reception, to the model, resulting in a one percentage point increase in the R-squared coefficient.
