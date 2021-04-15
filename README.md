@@ -51,3 +51,16 @@ While stats like the R-squared coefficient are fantastic at providing quantitati
 1. Title the new worksheet that is created “Regression Results” and explore your results, taking care to note key metrics like the R-squared coefficient. If you wish to replicate the residuals plot, make a scatter plot using the "Predicted FPTS/G" and "Residuals" columns of the residuals data below the initial regression results.
 1. If interested in replicating the Projected vs. Actual Fantasy Points Per Game Plot, make a scatterplot of 2019 FPTS/G and 2020 FPTS/G.
 
+## Updated Python Re-Analysis
+# Link to Python Code
+[Google Colaboratory Notebook](https://colab.research.google.com/drive/1MYalMjVm9kwQC4geE5MOU37lSAk90OPV?usp=sharing)
+
+# Updated Plotly Visualizations
+# Predicted 2020 Fantasy Points per Game versus Actual 2020 Fantasy Points per Game
+[Interactive visualization downloadable in HTML form](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/predicted_versus_actual_fantasy_points_2020) | [Static screenshot](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/predicted_versus_actual_fantasy_points_2020_static.PNG)
+![alt text](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/predicted_versus_actual_fantasy_points_2020_static.PNG)
+# Residuals versus Predicted 2020 Fantasy Points per Game
+[Interactive visualization downloadable in HTML form](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/residuals_versus_predicted_fantasy_points_2020) | [Static screenshot](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/residuals_versus_predicted_fantasy_points_2020_static.PNG)
+![alt text](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/residuals_versus_predicted_fantasy_points_2020_static.PNG)
+
+One really neat feature of the interactive HTML versions of both visuals is that you can hover over specific data points and see the player that each data point corresponds to.
