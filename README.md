@@ -54,11 +54,13 @@ While stats like the R-squared coefficient are fantastic at providing quantitati
 ## Updated Python Re-Analysis
 # Link to Python Code
 [Google Colaboratory Notebook](https://colab.research.google.com/drive/1MYalMjVm9kwQC4geE5MOU37lSAk90OPV?usp=sharing)
-
+# Updated Regression Results
+![alt text](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/Updated%20Python%20Regression%20Results.PNG)
 # Updated Plotly Visualizations
 # Predicted 2020 Fantasy Points per Game versus Actual 2020 Fantasy Points per Game
 [Interactive visualization downloadable in HTML form](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/predicted_versus_actual_fantasy_points_2020) | [Static screenshot](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/predicted_versus_actual_fantasy_points_2020_static.PNG)
 ![alt text](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/predicted_versus_actual_fantasy_points_2020_static.PNG)
+
 # Residuals versus Predicted 2020 Fantasy Points per Game
 [Interactive visualization downloadable in HTML form](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/residuals_versus_predicted_fantasy_points_2020) | [Static screenshot](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/residuals_versus_predicted_fantasy_points_2020_static.PNG)
 ![alt text](https://github.com/tberkery/predicting-next-year-fantasy-points-per-game/blob/main/residuals_versus_predicted_fantasy_points_2020_static.PNG)
